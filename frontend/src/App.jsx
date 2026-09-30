@@ -28,7 +28,7 @@ function App() {
 
   // Load normal sample log
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/api/analysis")
+    fetch("https://loglens-security-log-analysis-2026.onrender.com/api/analysis")
       .then((response) => response.json())
       .then((result) => setData(result))
       .catch((error) => console.error("API Error:", error));
